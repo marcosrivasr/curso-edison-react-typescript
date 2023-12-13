@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		"paths": {
+			"mrr-button": ["./src/packages/mrr-button/src/index.tsx"],
+			"mrr-input": ["./src/packages/mrr-input/src/index.tsx"]
+		}
+	},
+	"include": ["src"],
+	"references": [
+		{ "path": "./tsconfig.node.json" },
+		{ "path": "./src/packages/mrr-button/tsconfig.json" },
+		{ "path": "./src/packages/mrr-input/tsconfig.json" }
+	]
+}
