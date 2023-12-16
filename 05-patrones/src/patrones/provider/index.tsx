@@ -80,8 +80,8 @@ function ContactView({ name, email, phone }: ContactViewProps) {
 	return (
 		<div>
 			<h3>{name}</h3>
-			<p>{email}</p>
-			<p>{phone}</p>
+			<div>{email}</div>
+			<div>{phone}</div>
 		</div>
 	);
 }
